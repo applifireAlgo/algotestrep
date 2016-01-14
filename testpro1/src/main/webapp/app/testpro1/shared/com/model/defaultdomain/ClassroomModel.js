@@ -1,0 +1,31 @@
+Ext.define('Testpro1.testpro1.shared.com.model.defaultdomain.ClassroomModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "classId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "standard",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "totalStudents",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

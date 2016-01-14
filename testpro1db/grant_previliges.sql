@@ -1,0 +1,2 @@
+
+GRANT ALL PRIVILEGES  ON testpro1.* TO 'testpro1'@'%' IDENTIFIED BY 'testpro1' WITH GRANT OPTION

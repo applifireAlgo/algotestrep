@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.ClassroomTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-01-14T12:45:11" hostname="a9b83363682b" time="0.234">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.ClassroomTestCase" time="0.084"/>
+  <testcase name="test2Update" classname="com.app.server.service.ClassroomTestCase" time="0.043"/>
+  <testcase name="test3FindById" classname="com.app.server.service.ClassroomTestCase" time="0.005"/>
+  <testcase name="test4Delete" classname="com.app.server.service.ClassroomTestCase" time="0.101"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-14 12:45:11.599--ClientSession(769147730)--Connection(345947611)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Classroom_M (classId, standard, totalStudents, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [A0FC3822-A0D8-490D-8218-1DB9B41082A4, 2147483647, 2147483647, 1, AAAAA, 2016-01-14 12:45:11.573, null, 2016-01-14 12:45:11.573, 1, null]
+[EL Fine]: sql: 2016-01-14 12:45:11.651--ClientSession(911821981)--Connection(345947611)--Thread(Thread[Test worker,5,main])--SELECT classId, standard, totalStudents, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Classroom_M WHERE ((activeStatus = ?) AND (classId = ?))
+	bind => [1, A0FC3822-A0D8-490D-8218-1DB9B41082A4]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-14 12:45:11.654--ClientSession(1337776930)--Connection(345947611)--Thread(Thread[Test worker,5,main])--SELECT classId, standard, totalStudents, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Classroom_M WHERE (classId = ?)
+	bind => [A0FC3822-A0D8-490D-8218-1DB9B41082A4]
+[EL Fine]: sql: 2016-01-14 12:45:11.655--ClientSession(1337776930)--Connection(345947611)--Thread(Thread[Test worker,5,main])--UPDATE ast_Classroom_M SET updatedBy = ?, versionId = ? WHERE ((classId = ?) AND (versionId = ?))
+	bind => [AAAAA, 2, A0FC3822-A0D8-490D-8218-1DB9B41082A4, 1]
+[EL Fine]: sql: 2016-01-14 12:45:11.694--ClientSession(648350219)--Connection(345947611)--Thread(Thread[Test worker,5,main])--SELECT classId, standard, totalStudents, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Classroom_M WHERE ((activeStatus = ?) AND (classId = ?))
+	bind => [1, A0FC3822-A0D8-490D-8218-1DB9B41082A4]
+[EL Fine]: sql: 2016-01-14 12:45:11.7--ClientSession(927222953)--Connection(345947611)--Thread(Thread[Test worker,5,main])--SELECT classId, standard, totalStudents, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Classroom_M WHERE (classId = ?)
+	bind => [A0FC3822-A0D8-490D-8218-1DB9B41082A4]
+[EL Fine]: sql: 2016-01-14 12:45:11.702--ClientSession(927222953)--Connection(345947611)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Classroom_M WHERE ((classId = ?) AND (versionId = ?))
+	bind => [A0FC3822-A0D8-490D-8218-1DB9B41082A4, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
